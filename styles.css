@@ -2,14 +2,13 @@
     --bg: #121212;
     --bg-elevated: #1a1a1a;
     --surface: #dbd9d6;
-    --surface-dim: #c7c4bf;
     --paper: #f2f0ec;
     --ink: #121212;
     --muted: #948f8a;
     --muted-on-dark: #8a8783;
     --accent: #93a6d1;
     --accent-strong: #799ab8;
-    --accent-ink: #0e2019;
+    --accent-ink: #0e1820;
     --line: rgba(219, 217, 214, 0.12);
 
     --font-display: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -54,7 +53,7 @@ header {
 }
 
 .nav {
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: rgba(32, 32, 32, 0.158);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -120,7 +119,7 @@ header {
     text-decoration: none;
     font-weight: 600;
     font-size: 13px;
-    background-color: var(--ink);
+    background-color: black;
     color: var(--surface);
     padding: 9px 16px;
     border-radius: var(--radius-s);
@@ -129,7 +128,7 @@ header {
 }
 
 .button-git:hover {
-    background-color: #000;
+    background-color: #0a0a0a;
     transform: translateY(-1px);
 }
 
@@ -352,33 +351,6 @@ header {
     pointer-events: auto;
 }
 
-.screen-topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--ink);
-    margin-bottom: 14px;
-}
-
-.screen-topbar .material-symbols-outlined {
-    font-size: 18px;
-    color: var(--muted);
-}
-
-.screen-title {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.screen-title.small {
-    font-size: 11px;
-    font-weight: 600;
-    max-width: 140px;
-    text-align: center;
-}
-
-
 /* dots */
 .dots {
     display: flex;
@@ -467,10 +439,8 @@ header {
     background-color: rgba(156, 207, 182, 0.12);
     color: var(--accent);
     margin-bottom: 16px;
-
     font-size: 22px;
     line-height: 1;
-    box-sizing: border-box;
 }
 
 .material-symbols-outlined.feature-icon {
@@ -609,7 +579,7 @@ header {
         left: 0;
         right: 0;
 
-        background-color: rgba(255, 255, 255, 0.158);
+        background-color: rgba(32, 32, 32, 0.158);
         backdrop-filter: blur(16px) !important;
         -webkit-backdrop-filter: blur(16px) !important;
         
