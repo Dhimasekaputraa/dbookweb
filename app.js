@@ -60,3 +60,40 @@ if (phone) {
 if (slides.length && dots.length) {
     startAutoplay();
 }
+
+// Scroll reveal animation
+const revealEls = Array.from(document.querySelectorAll('.reveal'));
+
+if (revealEls.length) {
+    // Stagger cards inside the same grid so they cascade in one after another
+    const groups = new Map();
+    revealEls.forEach((el) => {
+        const parent = el.parentElement;
+        const group = groups.get(parent) || [];
+        group.push(el);
+        groups.set(parent, group);
+    });
+    groups.forEach((group) => {
+        group.forEach((el, i) => {
+            el.style.setProperty('--reveal-delay', `${Math.min(i * 60, 240)}ms`);
+        });
+    });
+
+    if (prefersReducedMotion) {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+    } else {
+        const revealObserver = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+        );
+
+        revealEls.forEach((el) => revealObserver.observe(el));
+    }
+}

@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
@@ -33,7 +32,7 @@
                     <li><a class="button" href="#features">Features</a></li>
                     <li><a class="button" target="_blank" rel="noopener" href="https://github.com/Dhimasekaputraa/dbook/releases/download/v1.0.0/DBook-v1.0-release.apk">Download</a></li>
                     <li><a class="button-git" target="_blank" rel="noopener" href="https://github.com/Dhimasekaputraa/dbook">
-                        <span class="material-symbols-outlined" aria-hidden="true">code</span>
+                        <span class="sprite-icon icon-code" aria-hidden="true"></span>
                         Github
                     </a></li>
                 </ul>
@@ -46,7 +45,7 @@
         <div class="hero">
             <div class="hero-copy">
                 <div class="tags">
-                    <span class="material-symbols-outlined" aria-hidden="true">android</span>
+                    <span class="sprite-icon icon-android" aria-hidden="true"></span>
                     <span>Android</span>
                 </div>
 
@@ -59,7 +58,7 @@
 
                 <div class="cta-group">
                     <a class="btn btn-filled" target="_blank" rel="noopener" href="https://github.com/Dhimasekaputraa/dbook/releases/download/v1.0.0/DBook-v1.0-release.apk">
-                        <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                        <span class="sprite-icon icon-download" aria-hidden="true"></span>
                         Download APK
                     </a>
                     <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/Dhimasekaputraa/dbook">
@@ -68,7 +67,7 @@
                 </div>
 
                 <div class="hero-meta">
-                    <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                    <span class="sprite-icon icon-verified" aria-hidden="true"></span>
                      Dbook Release v1.0.0
                 </div>
             </div>
@@ -81,16 +80,16 @@
                     <div class="phone-screen" id="phoneScreen">
 
                         <div class="slide is-active" data-slide="0">
-                            <img src="assets/screenshots/Screenshot_20260805-013553_DBook.png" alt="Library Screen">
+                            <img src="assets/screenshots/library.webp" alt="Library Screen">
                         </div>
                         <div class="slide" data-slide="1">
-                            <img src="assets/screenshots/Screenshot_20260805-012940_DBook.png" alt="Reader Screen">
+                            <img src="assets/screenshots/overview.webp" alt="Reader Screen">
                         </div>
                         <div class="slide" data-slide="2">
-                            <img src="assets/screenshots/Screenshot_20260805-021748_DBook.png" alt="Customize Reader">
+                            <img src="assets/screenshots/apperance.webp" alt="Customize Reader">
                         </div>
                         <div class="slide" data-slide="3">
-                            <img src="assets/screenshots/Screenshot_20260805-013246_DBook.png" alt="Share Image">
+                            <img src="assets/screenshots/share.webp" alt="Share Image">
                         </div>
                     </div>
                 </div>
@@ -107,44 +106,56 @@
 
     <!-- Features section -->
     <section class="features-section" id="features">
-        <div class="section-head">
+        <div class="section-head reveal">
             <span class="eyebrow">Why dbook?</span>
             <h2>Designed for readers<br>who prefer simplicity.</h2>
         </div>
 
         <div class="features-grid">
-            <article class="feature-card">
-                <span class="material-symbols-outlined feature-icon" aria-hidden="true">book</span>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <span class="sprite-icon icon-book" aria-hidden="true"></span>
+                </div>
                 <h3>Precise Rendering</h3>
                 <p>Powered by epub.js to ensure accurate formatting, clean layouts, and faithful pagination.</p>
             </article>
 
-            <article class="feature-card">
-                <span class="material-symbols-outlined feature-icon" aria-hidden="true">sync</span>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <span class="sprite-icon icon-sync" aria-hidden="true"></span>
+                </div>
                 <h3>Auto Sync progress</h3>
                 <p>Resume right where you left off. Your reading progress are always saved locally.</p>
             </article>
 
-            <article class="feature-card">
-                <span class="material-symbols-outlined feature-icon" aria-hidden="true">tune</span>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <span class="sprite-icon icon-tune" aria-hidden="true"></span>
+                </div>
                 <h3>Customizable Reader</h3>
-                <p>Personalize your readerscreen with adjustable font styles, text sizes, line spacing, and darkmodes</p>
+                <p>Personalize your readerscreen with themes, adjustable font styles, text sizes and line spacing</p>
             </article>
 
-            <article class="feature-card">
-                <span class="material-symbols-outlined feature-icon" aria-hidden="true">ink_highlighter</span>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <span class="sprite-icon icon-highlight" aria-hidden="true"></span>
+                </div>
                 <h3>Highlights &amp; Notes</h3>
                 <p>Select text, highlight it, and manage your personal annotations easily.</p>
             </article>
 
-            <article class="feature-card">
-                <span class="material-symbols-outlined feature-icon" aria-hidden="true">image</span>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <span class="sprite-icon icon-image" aria-hidden="true"></span>
+                </div>
                 <h3>Share text as Images</h3>
                 <p>Turn your favorite passages into images that you could share with others.</p>
             </article>
 
-            <article class="feature-card">
-                <span class="material-symbols-outlined feature-icon" aria-hidden="true">code</span>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <span class="sprite-icon icon-code" aria-hidden="true"></span>
+                </div>
                 <h3>Free &amp; open source</h3>
                 <p>No accounts, no ads, no tracking, and absolutely free.</p>
             </article>
