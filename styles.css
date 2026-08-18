@@ -84,6 +84,21 @@ img { display: block; max-width: 100%; }
     scale: 75%;
 }
 
+.hero-meta a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-meta a:visited,
+.hero-meta a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-meta a:hover {
+    color: var(--surface)
+}
+
 .hero-meta .icon-verified {
     background-color: var(--accent-strong);
     scale: 75%;
